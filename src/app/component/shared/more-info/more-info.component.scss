@@ -1,0 +1,35 @@
+@import "../../../../sass/variables";
+
+.more-info-box {
+    // display: flex;
+    background-color: $background-color;    
+}
+.info-box {
+    display: flex;
+    justify-content: flex-end;
+    div {
+        width: 50%;
+        margin: 40px 0;
+    }
+    > span {
+        display: block;
+    }
+    .content-title {
+        font-size: 24px;
+        color: $text-hover-color;
+        border-bottom: 3px solid #D3D3D3;
+        padding-bottom: 10px;
+    }
+    .content-text {
+        display: inline-block;
+        margin: 30px 0 100px;
+        color: #fff;
+    }
+
+}
+.btn-primary {
+    background-color: $text-hover-color;
+    border-radius: 0;
+    padding: 15px 40px;
+    border-color: $text-hover-color;
+}

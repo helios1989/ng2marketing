@@ -1,0 +1,27 @@
+@import "../../../../sass/variables";
+.navbar {
+    min-height: 90px;
+    margin-bottom: 0;   
+}
+header,
+.navbar {
+    background-color: $background-color;
+
+}
+.navbar-nav {
+    li {
+        padding-right: 35px;
+        >  a {
+            color: $text-color;
+            letter-spacing: 1px;
+            padding-top: 40px;
+            padding-bottom: 5px;
+        }
+    }
+    
+    > li a:hover {
+        color: $text-hover-color;
+        background-color: $background-color;
+        border-bottom: 3px solid $text-hover-color;
+    }
+}

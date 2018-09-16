@@ -1,0 +1,20 @@
+@import "../../../sass/variables";
+
+.wrapper {
+    background-color: $text-hover-color;
+    display: flex;
+    justify-content: center;
+    .disclaimer {
+        padding: 50px 0;
+        width: 50%;
+        text-align: center;
+        color: $background-color;
+    }
+    span {
+        display: inline-block;
+    }
+    .disclaimer-title {
+        padding: 40px 0 30px;
+        font-weight: 700;   
+    }
+}
