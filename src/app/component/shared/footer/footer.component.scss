@@ -2,5 +2,65 @@
 
 .footer {
     background-color: $background-color;
-    min-height: 60vh;
+    min-height: 140px;
+    padding: 45px 30px;
+    p {
+        margin: 0;
+        a {
+            color: #fff;
+        }
+    }
+    ul {
+        list-style: none;
+    }
+}
+.footer-contents {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+}
+.footer-contacts {
+    .code-contact {
+        color: $text-hover-color;
+    }
+    color: #fff;
+    p {
+        span {
+            padding-left: 10px;
+        }
+    }
+    p:nth-child(n+4) {
+        margin-left: 30px;
+    }
+}
+.footer-maps,
+.newsletter {
+    p:nth-child(1) {
+        color: $text-hover-color;
+        margin-bottom: 10px;
+    }
+    .btn-primary {
+        background-color: $text-hover-color;
+        border-radius: 6px;
+        padding: 5px 20px;
+        border-color: $text-hover-color;
+        color: $background-color;
+    }
+    .btn-primary:hover {
+        background-color: $background-color;
+        border-color: $text-hover-color;
+        color: $text-hover-color;
+        border-radius: 6px;   
+    }
+    input {
+        &.newsletter {
+            width: 430px;
+            font-size: 18px;
+            border-radius: 10px;
+            border-style: none;
+        }
+    }
+}
+app-social-media {
+    display: block;
+    margin-top: 20px;
 }
