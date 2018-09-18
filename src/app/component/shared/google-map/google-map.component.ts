@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./google-map.component.scss']
 })
 export class GoogleMapComponent implements OnInit {
-  lat: number = 51.520810;
-  lng: number = -0.143020;
+  lat: number = 51.678418;
+  lng: number = 7.809007;
   constructor() { }
 
   ngOnInit() {

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
 import { AppRoutingModule } from './app.routing.module';
 import { AgmCoreModule } from '@agm/core';
-
+import { AccordionModule } from 'ngx-bootstrap';
 //Components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/shared/header/header.component';
@@ -18,6 +18,8 @@ import { MyservicesComponent } from './component/myservices/myservices.component
 import { SocialMediaComponent } from './component/shared/social-media/social-media.component';
 import { GoogleMapComponent } from './component/shared/google-map/google-map.component';
 import { ContactsComponent } from './component/contacts/contacts.component';
+import { FaqComponent } from './component/faq/faq.component';
+import { FaqAccordionGroupComponent } from './component/shared/faq-accordion-group/faq-accordion-group.component';
 
 @NgModule({
   declarations: [
@@ -33,11 +35,15 @@ import { ContactsComponent } from './component/contacts/contacts.component';
     MyservicesComponent,
     SocialMediaComponent,
     GoogleMapComponent,
-    ContactsComponent
+    ContactsComponent,
+    FaqComponent,
+    FaqAccordionGroupComponent
   ],
   imports: [
     BrowserModule,
-    CollapseModule.forRoot(), BsDropdownModule.forRoot(),
+    CollapseModule.forRoot(), 
+    BsDropdownModule.forRoot(),
+    AccordionModule.forRoot(),
     AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDPogxeKkTjtKau4FChWHd5lAHNl5A_KpI'

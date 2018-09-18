@@ -16,11 +16,12 @@
 }
 .footer-contents {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-columns: 23% 20% 20% 37%;
 }
 .footer-contacts {
     .code-contact {
         color: $text-hover-color;
+        font-weight: 700;
     }
     color: #fff;
     p {
@@ -32,11 +33,17 @@
         margin-left: 30px;
     }
 }
-.footer-maps,
+.footer-maps {
+    p:nth-child(1) {
+        color: $text-hover-color;
+        font-weight: 700;    
+    }
+}
 .newsletter {
     p:nth-child(1) {
         color: $text-hover-color;
         margin-bottom: 10px;
+        font-weight: 700;    
     }
     .btn-primary {
         background-color: $text-hover-color;
@@ -53,7 +60,7 @@
     }
     input {
         &.newsletter {
-            width: 430px;
+            width: 310px;
             font-size: 18px;
             border-radius: 10px;
             border-style: none;
