@@ -14,7 +14,12 @@ header,
 .navbar {
     background-color: $background-color;
 }
-
+.navbar-toggle {
+    border: $text-hover-color;
+}
+.icon-bar {
+    background-color: #fff;
+}
 .navbar-nav {
     li {
         padding-right: 35px;
