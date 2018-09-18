@@ -4,5 +4,29 @@ app-google-map {
     display: block;
     min-height: 70vh;
     width: 30vw;
-    border: 1px solid red;
+}
+.contact-box {
+    span {
+        display: inline-block;
+    }
+    span:nth-child(1) {
+        color: $text-hover-color;
+        font-weight: 700;
+        display: inline-block;
+    }
+    .trading-contacts {
+        .code-contact {
+            color: $text-hover-color;
+            font-weight: 700;
+        }
+        color: #999;
+        p {
+            span {
+                padding-left: 10px;
+            }
+        }
+        p:nth-child(n+4) {
+            margin-left: 30px;
+        }
+    }
 }
